@@ -451,3 +451,25 @@ img {
     width: 450px;
   }
 }
+body {
+  background-color: var(--second-color);
+  color: var(--primary-text-color);
+}
+
+body * {
+  background-color: var(--second-color);
+  color: var(--primary-text-color);
+}
+
+.nav {
+  background-color: var(--title-panel-bg);
+}
+
+.snippet {
+  background-color: var(--snippet-panel-bg);
+}
+
+.btn {
+  background-color: var(--read-more-btn-bg);
+  color: var(--read-more-btn-color);
+}
