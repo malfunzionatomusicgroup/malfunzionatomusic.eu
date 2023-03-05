@@ -1,22 +1,71 @@
 body {
-  background-color: var(--second-color);
-  color: var(--primary-text-color);
+    background-color: #121212;
+    color: #f2f2f2;
 }
 
-body * {
-  background-color: var(--second-color);
-  color: var(--primary-text-color);
+a {
+    color: #f2f2f2;
 }
 
-.nav {
-  background-color: var(--title-panel-bg);
+header {
+    background-color: #333;
 }
 
-.snippet {
-  background-color: var(--snippet-panel-bg);
+#logo img {
+    filter: invert(1);
 }
 
-.btn {
-  background-color: var(--read-more-btn-bg);
-  color: var(--read-more-btn-color);
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#hero {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+#hero h1 {
+    color: #f2f2f2;
+}
+
+#featured-album {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+.album-image img {
+    filter: invert(1);
+}
+
+#events {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+#videos {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+#contact {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+#footer {
+    background-color: #333;
+    color: #f2f2f2;
 }
