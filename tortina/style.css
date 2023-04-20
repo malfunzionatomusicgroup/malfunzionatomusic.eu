@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background: url('https://i.imgur.com/OuV7RFa.jpg');
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 72px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 24px;
+    margin-bottom: 32px;
+}
+
+.content {
+    background-color: white;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.content p {
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 32px;
+}
