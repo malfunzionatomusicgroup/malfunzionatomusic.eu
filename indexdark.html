@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="darkmode.css" media="(prefers-color-scheme: dark)">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
+  <link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
 
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <title>Malfunzionato Records</title>
+  <title>Malfunzionato</title>
 </head>
 
-<body class="dark">
+<body>
   <header class="l-header">
     <nav class="nav bd-grid">
       <div>
-        <a href="#" class="nav__logo">Malfunzionato Records</a>
+        <a href="#" class="nav__logo">Malfunzionato</a>
       </div>
 
       <div class="nav__menu" id="nav-menu">
@@ -25,8 +24,7 @@
           <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#songs" class="nav__link">Songs</a></li>
-           <li class="nav__item"><a href="index.html" class="nav__link">☀</a></li>
-       </label>
+          <li class="nav__item"><a href="/indexdark.html" class="nav__link">☀</a></li>
         </ul>
       </div>
 
@@ -87,70 +85,28 @@
 
       <div class="work__container bd-grid">
         <a href="https://open.spotify.com/track/5Oz4GET5i4ER8xFEz5AVus?si=827336fb7777419d" class="work__img">
-          <img src="mfts.jpg" alt="">
+          <img src="mfts.jpg" alt="Messages From The Stars - Remix">
         </a>
         <a href="https://open.spotify.com/track/2A9cOQhicKTCXqC2JaFL5K?si=b94ee36fac6a484a" class="work__img">
-          <img src="rr.jpg" alt="">
-        </a>
-        <a href="https://open.spotify.com/track/38KtEW5tsRyBmFZ2WxOJ7V?si=e25914a623f04044" class="work__img">
-          <img src="ftp.jpg" alt="">
+          <img src="rr.jpg" alt="Rap Rumeno - spedup">
         </a>
         <a href="https://open.spotify.com/album/5yIhq1Ja18DM0qD66I1ZZs?si=5ocKz3_-SeOs0qgIBbZgxA" class="work__img">
-          <img src="vicvlw.jpg" alt="">
+          <img src="vicvlw.jpg" alt="Voglio il computer voglio la wi">
+        </a>
+        <a href="https://open.spotify.com/album/6VvUXftRlkk5lXh9Yah6qt?si=QDLwG9aYQcWkSaDQqu_aiA" class="work__img">
+          <img src="D67C69E5-B118-40DA-9CBB-0A42B9F63485.jpeg" alt="Chxcco Drill">
         </a>
       </div>
     </section>
 
     <footer class="footer">
-      <p class="footer__title">© 2022 - 2023 Malfunzionato Records</p>
+      <p class="footer__title">&copy 2022 - 2023 Reizy Company Limited (Trading as Malfunzionato Records)</p>
 
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
-    
-    <script>   
- const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
-     function switchTheme(e){
-         console.log('switcjing')
-        //Toggles between light / night classes without reloading //
-               e.target.checked ? changeColors('#292929', 'hsl(0deg, 0%,98%)') : changeColors('white','#282c34');
-             }
-
-             
-    let theme;
-
-function getSavedStuff(){
-console.log(localStorage.getItem('theme'));
-return JSON.parse(localStorage.getItem("theme")) || false ;
-}
-    
-     
-        window.onload = ()=>{
-            debugger;
-           //Apply saved state from localStorege//
-              document.documentElement.setAttribute(`data-theme`,getSavedStuff.theme);
-                }
-
-
-toggleSwitch.addEventListener ('change' , switchTheme,false);
-
-
-
-const changeColors =(bgColor,textClr)=>{
-      [...document.getElementsByClassName(lightDarkModeChangeElems)].map(x=>
-                                                      x.style.backgroundColor= bgColor,
-                                                     `color`: textClr);
-                                                 
-                                                 };
-                                                   
-     
-     
-       
-       
-</script>  
-   
 
 </body>
 
