@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="darkmode.css" media="(prefers-color-scheme: dark)">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="dark.css">
+<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)">
 
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -24,7 +25,8 @@
           <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#songs" class="nav__link">Songs</a></li>
-          <li class="nav__item"><a href="/index.html" class="nav__link">(☀)</a></li>
+           <li class="nav__item"><a href="index.html" class="nav__link">☀</a></li>
+       </label>
         </ul>
       </div>
 
@@ -107,6 +109,47 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
+    
+    <script>   
+ const toggleSwitch = document.querySelector('.switch input[type="checkbox"]');
+     function switchTheme(e){
+         console.log('switcjing')
+        //Toggles between light / night classes without reloading //
+               e.target.checked ? changeColors('#292929', 'hsl(0deg, 0%,98%)') : changeColors('white','#282c34');
+             }
+
+             
+    let theme;
+
+function getSavedStuff(){
+console.log(localStorage.getItem('theme'));
+return JSON.parse(localStorage.getItem("theme")) || false ;
+}
+    
+     
+        window.onload = ()=>{
+            debugger;
+           //Apply saved state from localStorege//
+              document.documentElement.setAttribute(`data-theme`,getSavedStuff.theme);
+                }
+
+
+toggleSwitch.addEventListener ('change' , switchTheme,false);
+
+
+
+const changeColors =(bgColor,textClr)=>{
+      [...document.getElementsByClassName(lightDarkModeChangeElems)].map(x=>
+                                                      x.style.backgroundColor= bgColor,
+                                                     `color`: textClr);
+                                                 
+                                                 };
+                                                   
+     
+     
+       
+       
+</script>  
    
 
 </body>
