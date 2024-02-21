@@ -308,7 +308,7 @@ img {
   color: rgb(42, 42, 42);
   text-align: center;
   font-weight: var(--font-semi);
-  padding: 0rem 0;
+  padding: 1rem 0;
 }
 
 .footer__title {
