@@ -305,7 +305,7 @@ img {
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
-  color: rgb(42, 42, 42);
+  color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
   padding: 1rem 0;
